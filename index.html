@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formularios</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
@@ -12,15 +12,25 @@
         <hr>
         <div class="usuarioinicio">
             <label for="nombreusuario">Nombre de usuario</label>
-            <input type="text" id="nombreusuario" placeholder="Nombre de usuario">
+            <input type="text" id="nombreusuario" name="nombreusuario" placeholder="Nombre de usuario">
         </div>
         <div class="contrainicio">
             <label for="contrausuario">Contraseña</label>
-            <input type="password" id="contrausuario" placeholder="Contraseña">
+            <input type="password" id="contrausuario" name="contrausuario" placeholder="Contraseña">
         </div>
         <center>
             <input type="button" value="Acceder">
         </center>
+        <i><a href="recuperar_contra.html">Olvido su contraseña</a></i>
+        <hr>
+        <br>
+</center>
+<fieldset>
+        <legend>Nuevo Usuario</legend>
+        <center>
+        <a href="registrarse.html">Registrarse</a>
+    </center>
+</fieldset>
     </form>
 </body>
 </html>

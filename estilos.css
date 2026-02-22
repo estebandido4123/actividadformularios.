@@ -6,10 +6,12 @@
 
 body{
     background-image:url(imaganes/fondo1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form{
-    width:20%;
+    width:35%;
     margin:auto;
     padding:1em;
     border:1px solid #D4CECF;
@@ -26,15 +28,16 @@ form label, i{
 }
 
 form input{
-    margin:5px;
+    margin:10px;
     width:95%;
     border:none;
     border-bottom:2px solid #363031;
     background: none;
+    padding:10px;
 }
 
 form input[type="button"]{
-width:50%;
+width:70%;
 border-bottom: none;
 padding:10px;
 }
@@ -42,12 +45,37 @@ padding:10px;
 form input:hover{
     cursor:pointer;
     border-bottom:2px solid #D4CECF;
-    padding:2px;
     transition: all 1s;
 }
 
 form input[type="button"]:hover{
-    padding:15px;
+    background-color:black;
+    color:white;
+    transition: all ease 1s;
+}
+
+form fieldset a{
+    text-decoration:none;
+    cursor:pointer;
+    display:block;
+    padding:10px;
+    color:black;
+
+}
+
+form fieldset a:hover{
+    background-color:black;
+    color:white;
+    transition: all ease 1s;
+}
+
+@media screen and (max-width:960px){
+    form{
+        width:80%;
+    }
+   form input[type="button"]{
+    width:100%;
+   } 
 }
 
 
