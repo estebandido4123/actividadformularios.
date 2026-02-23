@@ -9,7 +9,64 @@
 <body>
     <a href="index.html" class="regresar">Regresar a inicio</a>
     <form action="" class="registrase">
+        <h1><i>Registrarse</i></h1>
+        <br>
+        <hr>
+        <br>
+        <label for="nombreregistro">Nombre(s)</label>
+        <input type="text" name="nombreregistro" id="nombreregistro" placeholder="Ingrese su nombre o nombres" required>
         
+        <label for="apellidoregistro">Apellido(s)</label>
+        <input type="text" name="apellidoregistro" id="apellidoregistro" placeholder="Ingrese su apellido o apellidos" required>
+        
+        <label for="telefonoregistro">Telefono</label>
+        <input type="text" name="telefonoregistro" id="telefonoregistro" placeholder="Ingrese su numero telefonico" pattern="[0-9]{8}" maxlength="8" required>
+        
+        <label for="fecharegistro">Fecha de nacimiento</label>
+        <input type="date" name="fecharegistro" id="fecharegistro" required>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <div class="radio1">
+                <input type="radio" name="generoregistro" id="radiopcionh" value="hombre">
+                <label for="radiopcionh">Hombre</label>
+           
+                <input type="radio" name="generoregistro" id="radiopcionm" value="mujer">
+                <label for="radiopcionm">Mujer</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Intereses</legend>
+        <div class="checkboxsregistro">
+            <input type="checkbox" id="" name="">
+            <label for="">Educación</label>
+
+            <input type="checkbox" id="" name="">
+            <label for="">Deportes</label>            
+
+            <input type="checkbox" id="" name="">
+            <label for="">Arte</label>
+            
+            <input type="checkbox" id="" name="">
+            <label for="">Ocio</label>
+        </div>
+        </fieldset>
+        
+        <label for="">Nivel Academico: </label> 
+        <select name="nivelRegistro" id="" required>
+            <option value="diversifico">Diversificado</option>
+            <option value="basicos">Basicos</option>
+            <option value="primeria">Primaria</option>
+            <option value="Universitario">Universitario</option>
+        </select>
+        
+        <label for="emailregistro">Correo Electronico</label>
+        <input type="email" name="emailregistro" id="emailregistro" placeholder="Ingrese su correo electronico" required>
+        
+        <center>
+            <input type="button" value="Acceder">
+        </center>
+
     </form>
 </body>
 </html>
