@@ -4,21 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+    <a href="index.html" class="regresar">Regresar a inicio</a>
     <form action="">
         <h1><i>Formulario de preferencias.</i></h1>
         <hr>
-        <input type="time">
-        <input type="color">
-        <input type="datetime-local">
-        <input type="number" max="20" min="0" step="2">
-        <fieldset>
-            <legend>año</legend>
-            <input type="month" name="" id="">
-            <input type="file">
-        </fieldset>
+       <br> 
+        <label for="timecontroles">Seleccione su hora favorita del dia:</label>
+        <input type="time" name="timecontroles" id="timecontroles">
+
+        <label for="colorcontroles">Seleccione su color favorito:</label>
+        <input type="color" name="colorcontroles" id="colorcontroles">
+
+        <label for="datalocalcontroles">Seleccione fecha de nacimiento con hora y minuto de nacimiento exactos :</label>
+        <input type="datetime-local" name="datalocalcontroles" id="datalocalcontroles">
+
+        <label for="filecontroles">Ingrese una fotografia suya: </label>
+        <input type="file" name="filecontroles" id="filecontroles">
+
+        <label for="passwordcontroles">Ingrese Contraseña</label>
+        <input type="password" id="passwordcontroles" name="passwordcontroles" placeholder="Ingrese contraseña"> 
         
+        <label for="">Seleccione el nivel de ingles que tiene del 0 al 100:</label>
+        <input type="range" max="100" min="0" name="rangocontroles" id="rangocontroles">
+
+        <label for="numerocontroles">Ingrese su edad:</label>
+        <input type="number" max="130" min="0" step="1" id="numerocontroles" name="numerocontroles" placeholder="Ingresar la edad en enteros">
+
+        <label for="urlcontroles">Ingrese el enlace de su repositorio de Github</label>
+        <input type="url" name="urlcontroles" id="urlcontroles" placeholder="Repositorio de Github">
+
+        <center>
+            <input type="button" value="Acceder">
+        </center>
     </form>    
 </body>
 </html>
